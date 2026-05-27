@@ -12,8 +12,8 @@ GraphRAG construye un grafo de conocimiento a partir de tus documentos y permite
 ## Instalacion
 
 ```bash
-git clone <repo-url>
-cd graphrag-demo
+git clone https://github.com/stephanzuckermanc/rag-demo.git
+cd rag-demo
 python3 -m venv venv
 source venv/bin/activate
 pip install -r config/requirements.txt
@@ -57,13 +57,19 @@ graphrag-demo/
 └── data/
     ├── raw/                  # documentos originales (PDF, DOCX, MD, TXT)
     ├── docs/                 # documentacion del proyecto
-    │   └── commands.md       # referencia de comandos del CLI
+    │   ├── commands.md       # referencia de comandos del CLI
+    │   └── outputs_y_preguntas.md  # guia de outputs y como preguntar
     ├── prompts/              # templates de prompts (configurados en espanol)
     ├── input/                # texto plano convertido (auto-generado)
     ├── output/               # grafo, reportes, diagramas (auto-generado)
     ├── cache/                # cache de llamadas al LLM (auto-generado)
     └── logs/                 # logs de indexacion (auto-generado)
 ```
+
+## Documentacion para el equipo
+
+- [`data/docs/commands.md`](data/docs/commands.md) — referencia rapida de todos los comandos.
+- [`data/docs/outputs_y_preguntas.md`](data/docs/outputs_y_preguntas.md) — que genera el sistema en `data/output/` y como formular buenas preguntas (global vs local).
 
 ## Comandos
 
