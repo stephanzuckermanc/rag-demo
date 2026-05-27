@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+*.egg
+
+config/.env
+
+data/raw/
+data/input/
+data/output/
+data/cache/
+data/logs/
+
+.claude/
+.DS_Store
